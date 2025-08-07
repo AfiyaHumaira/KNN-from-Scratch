@@ -87,9 +87,7 @@ Where:
   
 ---
 
-### 📌 Full: **Experiment Results & Sample Output**
 
-```markdown
 ## 🔍 Experiment Results
 
 The following experiments were conducted using both **Iris** and **News** datasets:
@@ -111,6 +109,8 @@ Each dataset was then tested using:
 - Best **Split Ratio**: 20% test data
 - **Accuracy**: 100%
 - **Confusion Matrix**:
+  ```markdown
 [[11, 0, 0],
 [ 0,13, 0],
 [ 0, 0, 6]]
+```
