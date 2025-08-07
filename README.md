@@ -20,7 +20,7 @@ The project includes:
 
 | File Name                                                   | Description                                                  |
 |-------------------------------------------------------------|--------------------------------------------------------------|
-| `KNN_from_Scratch_Iris_and_News_Classification.ipynb`       | Main Google Colab notebook with full code and outputs        |
+| [`KNN_from_Scratch_Iris_and_News_Classification.ipynb`](https://github.com/AfiyaHumaira/KNN-from-Scratch/blob/main/KNN_from_Scratch_Iris_and_News_Classification.ipynb)       | Main Google Colab notebook with full code and outputs        |
 | `news_dataset_200.csv`                                      | Custom dataset: 100 sports + 100 politics news headlines     |
 | `README.md`                                                 | This documentation file                                      |
 
