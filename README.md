@@ -21,7 +21,7 @@ The project includes:
 | File Name                                                   | Description                                                  |
 |-------------------------------------------------------------|--------------------------------------------------------------|
 | [`KNN_from_Scratch_Iris_and_News_Classification.ipynb`](https://github.com/AfiyaHumaira/KNN-from-Scratch/blob/main/KNN_from_Scratch_Iris_and_News_Classification.ipynb)       | Main Google Colab notebook with full code and outputs        |
-| `news_dataset_200.csv`                                      | Custom dataset: 100 sports + 100 politics news headlines     |
+| [`news_dataset_200.csv`](https://github.com/AfiyaHumaira/KNN-from-Scratch/blob/main/news_dataset_200.csv)                                      | Custom dataset: 100 sports + 100 politics news headlines     |
 | `README.md`                                                 | This documentation file                                      |
 
 ---
@@ -59,4 +59,58 @@ KNN is a lazy learning, instance-based algorithm that classifies a data point by
 
 ```math
 d(p, q) = \sqrt{\sum_{i=1}^{n}(p_i - q_i)^2}
+```
+Where:
+- p and 𝑞 are two feature vectors
+- n is the number of features
 
+## ✅ Evaluation Metrics (Manually Implemented)
+
+```python
+ Accuracy = (TP + TN) / Total
+ Precision = TP / (TP + FP)
+ Recall = TP / (TP + FN)
+ F1 Score = 2 * (Precision * Recall) / (Precision + Recall)
+```
+## 📊 Evaluation Metrics (Implemented from Scratch)
+```python
+ Accuracy = (TP + TN) / Total
+ Precision = TP / (TP + FP)
+ Recall = TP / (TP + FN)
+ F1 Score = 2 * (Precision * Recall) / (Precision + Recall)
+```
+## 🧮 Implementation Notes
+- All metrics are calculated per class
+- Results are printed separately for each class
+- All metrics are implemented manually using loops and counters
+
+  
+---
+
+### 📌 Full: **Experiment Results & Sample Output**
+
+```markdown
+## 🔍 Experiment Results
+
+The following experiments were conducted using both **Iris** and **News** datasets:
+
+- Multiple values of `k` from **1 to 10** were tested
+- Multiple **train-test split ratios** were tried: 0.2, 0.3, 0.4, 0.5
+- The best performing combination (highest accuracy) was selected for final evaluation
+
+Each dataset was then tested using:
+- Custom KNN implementation
+- Scikit-learn's `KNeighborsClassifier` for comparison
+
+---
+
+## ✅ Sample Results
+
+### 🌸 Iris Dataset — Custom KNN
+- Best **k**: 1
+- Best **Split Ratio**: 20% test data
+- **Accuracy**: 100%
+- **Confusion Matrix**:
+[[11, 0, 0],
+[ 0,13, 0],
+[ 0, 0, 6]]
