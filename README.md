@@ -109,7 +109,7 @@ Each dataset was then tested using:
 - Best **Split Ratio**: 20% test data
 - **Accuracy**: 100%
 - **Confusion Matrix**:
-  ```python
+```python
 [[11, 0, 0],
 [ 0,13, 0],
 [ 0, 0, 6]]
